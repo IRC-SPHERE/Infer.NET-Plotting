@@ -40,6 +40,13 @@ namespace BayesianDictionaryLearning
 
     public static class PlottingHelper
     {
+<<<<<<< HEAD
+=======
+        public static string PythonPath { get; set; }
+        public static string ScriptPath { get; set; }
+        public static string FigurePath { get; set; }
+
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
         /// <summary>
         /// Plots the results.
         /// </summary>
@@ -61,9 +68,15 @@ namespace BayesianDictionaryLearning
                 XLabel = xlabel,
                 YLabel = ylabel,
                 Series = new[] { series },
+<<<<<<< HEAD
                 ScriptName = Path.Combine(MainClass.ScriptPath, title.Replace(" ", "_") + ".py"),
                 FigureName = Path.Combine(MainClass.FigurePath, title.Replace(" ", "_") + ".pdf"),
                 Python = MainClass.PythonPath,
+=======
+                ScriptName = Path.Combine(ScriptPath, title.Replace(" ", "_") + ".py"),
+                FigureName = Path.Combine(FigurePath, title.Replace(" ", "_") + ".pdf"),
+                Python = PythonPath,
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = show,
                 Tight = true
             };
@@ -100,7 +113,11 @@ namespace BayesianDictionaryLearning
                 XLabel = xlabel,
                 YLabel = y1Label,
                 Series = series1,
+<<<<<<< HEAD
                 Python = MainClass.PythonPath,
+=======
+                Python = PythonPath,
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = show,
                 Tight = true
             };
@@ -125,9 +142,15 @@ namespace BayesianDictionaryLearning
                 XLabel = xlabel,
                 YLabel = ylabel,
                 Series = series,
+<<<<<<< HEAD
                 ScriptName = Path.Combine(MainClass.ScriptPath, filename.Replace(" ", "_") + ".py"),
                 FigureName = Path.Combine(MainClass.FigurePath, filename.Replace(" ", "_") + ".pdf"),
                 Python = MainClass.PythonPath,
+=======
+                ScriptName = Path.Combine(ScriptPath, filename.Replace(" ", "_") + ".py"),
+                FigureName = Path.Combine(FigurePath, filename.Replace(" ", "_") + ".pdf"),
+                Python = PythonPath,
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = show,
                 Tight = true
             };
@@ -155,9 +178,15 @@ namespace BayesianDictionaryLearning
                 XLabel = xlabel,
                 YLabel = ylabel,
                 Series = series,
+<<<<<<< HEAD
                 ScriptName = Path.Combine(MainClass.ScriptPath, title.Replace(" ", "_") + ".py"),
                 FigureName = Path.Combine(MainClass.FigurePath, title.Replace(" ", "_") + ".pdf"),
                 Python = MainClass.PythonPath,
+=======
+                ScriptName = Path.Combine(ScriptPath, title.Replace(" ", "_") + ".py"),
+                FigureName = Path.Combine(FigurePath, title.Replace(" ", "_") + ".pdf"),
+                Python = PythonPath,
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = show,
                 Tight = true
             };
@@ -173,9 +202,15 @@ namespace BayesianDictionaryLearning
 					// Title = title,
 					XLabel = "bases",
 					YLabel = "signals",
+<<<<<<< HEAD
                     ScriptName = Path.Combine(MainClass.ScriptPath, $"{filename.Replace(" ", "_")}.py"),
                     FigureName = Path.Combine(MainClass.FigurePath, $"{filename.Replace(" ", "_")}.pdf"),
                     Python = MainClass.PythonPath,
+=======
+                    ScriptName = Path.Combine(ScriptPath, $"{filename.Replace(" ", "_")}.py"),
+                    FigureName = Path.Combine(FigurePath, $"{filename.Replace(" ", "_")}.pdf"),
+                    Python = PythonPath,
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                     Series = new ISeries[] { new HintonSeries { Values = values } },
 					Grid = false,
 				    Show = show,
@@ -205,9 +240,15 @@ namespace BayesianDictionaryLearning
                 Title = title + (string.IsNullOrEmpty(subTitle) ? string.Empty : " " + subTitle),
                 XLabel = "x", YLabel = "y", 
                 Series = series, Subplots = options.Signals.Subplots,
+<<<<<<< HEAD
                 ScriptName = Path.Combine(MainClass.ScriptPath, title + ".py"),
                 FigureName = Path.Combine(MainClass.FigurePath, title + ".pdf"),
                 Python = MainClass.PythonPath
+=======
+                ScriptName = Path.Combine(ScriptPath, title + ".py"),
+                FigureName = Path.Combine(FigurePath, title + ".pdf"),
+                Python = PythonPath
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
             };
 
             plotter.Plot();            
@@ -228,9 +269,15 @@ namespace BayesianDictionaryLearning
                 XLabel = "x",
                 YLabel = "y",
                 Series = new[] { series },
+<<<<<<< HEAD
                 ScriptName = Path.Combine(MainClass.ScriptPath, title + ".py"),
                 FigureName = Path.Combine(MainClass.FigurePath, title + ".pdf"),
                 Python = MainClass.PythonPath
+=======
+                ScriptName = Path.Combine(ScriptPath, title + ".py"),
+                FigureName = Path.Combine(FigurePath, title + ".pdf"),
+                Python = PythonPath
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
             };
 
             plotter.Plot();
@@ -428,9 +475,15 @@ namespace BayesianDictionaryLearning
                 YLabel = "y",
                 Series = series,
                 Subplots = plotOptions.Reconstructions.Subplots,
+<<<<<<< HEAD
                 ScriptName = Path.Combine(MainClass.ScriptPath, $"Reconstructions_{n}{sub}.py"),
                 FigureName = Path.Combine(MainClass.FigurePath, $"Reconstructions_{n}{sub}.pdf"),
                 Python = MainClass.PythonPath,
+=======
+                ScriptName = Path.Combine(ScriptPath, $"Reconstructions_{n}{sub}.py"),
+                FigureName = Path.Combine(FigurePath, $"Reconstructions_{n}{sub}.pdf"),
+                Python = PythonPath,
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = plotOptions.Reconstructions.Show
             };
             plotter.Plot();
@@ -452,7 +505,11 @@ namespace BayesianDictionaryLearning
                 (ia, i) => (ISeries) new HintonSeries
                 {
                     Label = "signal",
+<<<<<<< HEAD
                     Values = Data.Reshape(Vector.Build.Dense(ia.Signal)),
+=======
+                    Values = Reshape(Vector.Build.Dense(ia.Signal)),
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                     Row = i,
                     Column = 0
                 }).ToArray();
@@ -461,7 +518,11 @@ namespace BayesianDictionaryLearning
                 {
                     Label = "reconstruction",
                     // ErrorLabel = "$\\pm$s.d.",
+<<<<<<< HEAD
                     Values = Data.Reshape(Vector.Build.Dense(ia.Estimate.GetMeans())),
+=======
+                    Values = Reshape(Vector.Build.Dense(ia.Estimate.GetMeans())),
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                     // ErrorValues = ia.Estimate.GetStandardDeviations(),
                     Row = i,
                     Column = 1
@@ -484,9 +545,15 @@ namespace BayesianDictionaryLearning
                 Grid = false,
                 Series = series,
                 Subplots = subplots,
+<<<<<<< HEAD
                 ScriptName = Path.Combine(MainClass.ScriptPath, $"Reconstructions_{n}{sub2}.py"),
                 FigureName = Path.Combine(MainClass.FigurePath, $"Reconstructions_{n}{sub2}.pdf"),
                 Python = MainClass.PythonPath,
+=======
+                ScriptName = Path.Combine(ScriptPath, $"Reconstructions_{n}{sub2}.py"),
+                FigureName = Path.Combine(FigurePath, $"Reconstructions_{n}{sub2}.pdf"),
+                Python = PythonPath,
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = plotOptions.Reconstructions.Show
             };
             plotter.Plot();
@@ -533,9 +600,15 @@ namespace BayesianDictionaryLearning
             { 
                 Title = $"{title} {sel}",
                 XLabel = "x", YLabel = "y", Series = series, Subplots = options.Subplots,
+<<<<<<< HEAD
                 Python = MainClass.PythonPath,
                 ScriptName = Path.Combine(MainClass.ScriptPath, $"{title}{sub}_{sel}.py"),
                 FigureName = Path.Combine(MainClass.FigurePath, $"{title}{sub}_{sel}.pdf"),
+=======
+                Python = PythonPath,
+                ScriptName = Path.Combine(ScriptPath, $"{title}{sub}_{sel}.py"),
+                FigureName = Path.Combine(FigurePath, $"{title}{sub}_{sel}.pdf"),
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = options.Show
             };
             
@@ -545,19 +618,30 @@ namespace BayesianDictionaryLearning
         /// <summary>
         /// Plot errors with evidence on twinx
         /// </summary>
+<<<<<<< HEAD
         public static void PlotErrorsWithEvidence(Results results, bool show = false)
         {
             // Here we're going to customise the Plotter.TwinPlot function
             var x = results.BasisCounts.Select(ia => (double)ia).ToArray();
             var y1 = results.Errors;
             var y2 = results.Evidence;
+=======
+        public static void PlotErrorsWithEvidence(IList<double> bases, IList<double> errors, IList<double> evidence, bool show = false)
+        {
+            // Here we're going to customise the Plotter.TwinPlot function
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
             const string title = "Effect of number of bases";
             const string xlabel = "#bases";
             const string y1Label = "Reconstruction error";
             const string y2Label = "Log Evidence";
             
+<<<<<<< HEAD
             var series1 = new ISeries[] { new LineSeries { X = x, Y = y1, Color = "next(palette)", Label = "Reconstruction error" } };
             var series2 = new ISeries[] { new LineSeries { X = x, Y = y2, Color = "next(palette)", Label = "Evidence" } };
+=======
+            var series1 = new ISeries[] { new LineSeries { X = bases, Y = errors, Color = "next(palette)", Label = "Reconstruction error" } };
+            var series2 = new ISeries[] { new LineSeries { X = bases, Y = evidence, Color = "next(palette)", Label = "Evidence" } };
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
 
 			// Here we build the plotting script for the second plot (without the pre/postamble), 
 			// so we can append it to the script for the first plot
@@ -572,9 +656,15 @@ namespace BayesianDictionaryLearning
                 XLabel = xlabel, 
                 YLabel = y1Label, 
                 Series = series1, 
+<<<<<<< HEAD
                 Python = MainClass.PythonPath,
                 ScriptName = Path.Combine(MainClass.ScriptPath, "EffectOfBases"),
                 FigureName = Path.Combine(MainClass.FigurePath, "EffectOfBases"),
+=======
+                Python = PythonPath,
+                ScriptName = Path.Combine(ScriptPath, "EffectOfBases"),
+                FigureName = Path.Combine(FigurePath, "EffectOfBases"),
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = show
             };
             
@@ -594,11 +684,19 @@ namespace BayesianDictionaryLearning
 			// Plotter.Hinton(image);
 			var plotter = new Plotter 
             { 
+<<<<<<< HEAD
                 Series = new ISeries[] { new MatrixSeries { Values = Data.Reshape(imageFlat) } }, 
                 Grid = false,
                 Python = MainClass.PythonPath,
                 ScriptName = Path.Combine(MainClass.ScriptPath, "EffectOfBases"),
                 FigureName = Path.Combine(MainClass.FigurePath, "EffectOfBases"),
+=======
+                Series = new ISeries[] { new MatrixSeries { Values = Reshape(imageFlat) } }, 
+                Grid = false,
+                Python = PythonPath,
+                ScriptName = Path.Combine(ScriptPath, "EffectOfBases"),
+                FigureName = Path.Combine(FigurePath, "EffectOfBases"),
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = show
             };
 			plotter.Plot();
@@ -615,7 +713,11 @@ namespace BayesianDictionaryLearning
             var series =
                 (from t in imagesFlat.EnumerateRowsIndexed()
                     let index = t.Item1
+<<<<<<< HEAD
                     let image = Data.Reshape(t.Item2)
+=======
+                    let image = Reshape(t.Item2)
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                     select
                         new MatrixSeries
                         {
@@ -631,9 +733,15 @@ namespace BayesianDictionaryLearning
                 Series = series, 
                 Grid = false, 
                 Subplots = options.Subplots,
+<<<<<<< HEAD
                 Python = MainClass.PythonPath,
                 ScriptName = Path.Combine(MainClass.ScriptPath, "EffectOfBases"),
                 FigureName = Path.Combine(MainClass.FigurePath, "EffectOfBases"),
+=======
+                Python = PythonPath,
+                ScriptName = Path.Combine(ScriptPath, "EffectOfBases"),
+                FigureName = Path.Combine(FigurePath, "EffectOfBases"),
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
                 Show = options.Show
             };
 
@@ -735,5 +843,24 @@ namespace BayesianDictionaryLearning
 
             return series;
         }
+<<<<<<< HEAD
+=======
+
+        /// <summary>
+        /// Reshape the specified flat image.
+        /// </summary>
+        /// <param name="imageFlat">Image flat.</param>
+        public static double[][] Reshape(Vector imageFlat)
+        {
+            var sz = (int)Math.Sqrt(imageFlat.Count);
+            var image = new double[sz][];
+            for (int i = 0; i < sz; i++)
+            {
+                image[i] = imageFlat.SubVector(i * sz, sz).ToArray();
+            }
+
+            return image;
+        }
+>>>>>>> 62595546fc8084722c3d5e46078a6e4ba0ebeeb5
     }
 }
