@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InferNetPlotting", "InferNetPlotting.csproj", "{48BA6F24-828A-4B33-B40E-438A2ED917D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InferHelpers", "Infer.NET-helpers\InferHelpers\InferHelpers.csproj", "{A28EC223-6D0F-4B3A-A6CB-4787A12F401F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythonPlotter", "PythonPlotter\PythonPlotter.csproj", "{7013C931-AAB9-4B60-A7CA-F71F6F1B09C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{48BA6F24-828A-4B33-B40E-438A2ED917D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48BA6F24-828A-4B33-B40E-438A2ED917D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48BA6F24-828A-4B33-B40E-438A2ED917D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28EC223-6D0F-4B3A-A6CB-4787A12F401F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28EC223-6D0F-4B3A-A6CB-4787A12F401F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28EC223-6D0F-4B3A-A6CB-4787A12F401F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28EC223-6D0F-4B3A-A6CB-4787A12F401F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7013C931-AAB9-4B60-A7CA-F71F6F1B09C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7013C931-AAB9-4B60-A7CA-F71F6F1B09C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7013C931-AAB9-4B60-A7CA-F71F6F1B09C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7013C931-AAB9-4B60-A7CA-F71F6F1B09C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
