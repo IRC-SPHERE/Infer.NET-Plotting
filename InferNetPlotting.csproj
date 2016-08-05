@@ -28,6 +28,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Numerics" />
     <Reference Include="Infer.Compiler">
       <HintPath>packages\Microsoft.Research.InferNET.2.6.41114.1\lib\net45\Infer.Compiler.dll</HintPath>
     </Reference>
@@ -35,9 +36,9 @@
       <HintPath>packages\Microsoft.Research.InferNET.2.6.41114.1\lib\net45\Infer.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="MathNet.Numerics">
-      <HintPath>packages\MathNet.Numerics.3.11.1\lib\net40\MathNet.Numerics.dll</HintPath>
+      <HintPath>packages\MathNet.Numerics.3.12.0\lib\net40\MathNet.Numerics.dll</HintPath>
     </Reference>
-    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyClass.cs" />
@@ -47,13 +48,13 @@
     <Compile Include="Reconstruction.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="PythonPlotter\PythonPlotter.csproj">
-      <Project>{7013C931-AAB9-4B60-A7CA-F71F6F1B09C9}</Project>
-      <Name>PythonPlotter</Name>
-    </ProjectReference>
     <ProjectReference Include="Infer.NET-helpers\InferHelpers\InferHelpers.csproj">
       <Project>{A28EC223-6D0F-4B3A-A6CB-4787A12F401F}</Project>
       <Name>InferHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="PythonPlotter\PythonPlotter.csproj">
+      <Project>{7013C931-AAB9-4B60-A7CA-F71F6F1B09C9}</Project>
+      <Name>PythonPlotter</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

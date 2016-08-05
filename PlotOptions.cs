@@ -25,7 +25,7 @@
 // THE SOFTWARE.
 
 
-namespace BayesianDictionaryLearning
+namespace InferNetPlotting
 {
     using PythonPlotter;
 
